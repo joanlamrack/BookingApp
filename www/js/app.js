@@ -38,6 +38,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('music', {
     url: '/about',
     templateUrl: 'about.html'
+  })
+  .state('book', {
+    url: '/book',
+    templateUrl: 'book.html'
   });
   $urlRouterProvider.otherwise('/');  
 });
