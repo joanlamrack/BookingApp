@@ -56,18 +56,14 @@ ion-pane{
 	margin-right: 5%
 }
 
-.buttons span{
-	display: block;
-	line-height: 10px; // Add
-}
-
 button{
 	padding: 10%;
 }
 
 
 
-.about{
+.about, .search, .book{
 	background-color: Grey;
 	padding:5%;
 }
+

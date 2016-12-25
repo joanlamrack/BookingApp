@@ -66,14 +66,10 @@
                   Welcome, User.<br>What would you do?
                   </div>
                   <div class="buttons">
-                      <button class="button button-outline button-light menu">
-                        <i class="button icon ion-ios-book" href="#/book"></i>
-                        <span> Book</span>
-                      </button>
-                      <button class="button button-outline button-light menu">
-                        <i class="icon ion-ios-list"></i>
-                        <span>Search</span>
-                      </button>
+
+                      <a class="button ion-chevron-right menu" href="#/book">Book</a>
+
+                      <a class="button ion-chevron-right menu" href="#/search">Search</a>
                   </div>
                 </div>
               </ion-content>
@@ -91,7 +87,7 @@
           </div>
 
           <ion-pane class="about">
-            <ion-content scroll="false" class="about">
+            <ion-content scroll="false" class="about" has-header="true" padding="true">
               <p><br><br><br>&emsp;&emsp;Reservenue, the Venue Booking App on the go! 2016</p>
               </ion-content>
           </ion-pane>
@@ -106,7 +102,22 @@
           </div>
 
           <ion-pane class="book">
-            <ion-content scroll="false" class="book">
+            <ion-content scroll="false" class="book" has-header="true" padding="true">
+                Hehehehe
+            </ion-content>
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="search.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button icon-left ion-chervon-left" href="#/"> Back </a>
+            <h1 class="title">Search</h1>
+          </div>
+
+          <ion-pane class="search">
+            <ion-content scroll="false" class="search" has-header="true" padding="true">
                 Hehehehe
             </ion-content>
           </ion-pane>

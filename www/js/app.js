@@ -35,14 +35,22 @@ app.config(function($stateProvider, $urlRouterProvider) {
     url: '/',
     templateUrl: 'home.html'
   })
-  .state('music', {
+
+  .state('about', {
     url: '/about',
     templateUrl: 'about.html'
   })
+
+  .state('search', {
+    url: '/search',
+    templateUrl: 'search.html'
+  })
+
   .state('book', {
     url: '/book',
     templateUrl: 'book.html'
   });
+
   $urlRouterProvider.otherwise('/');  
 });
 
