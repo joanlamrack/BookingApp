@@ -46,6 +46,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'search.html'
   })
 
+  .state('history', {
+    url: '/history',
+    templateUrl: 'history.html'
+  })
+
+  .state('advanced', {
+    url: '/advanced',
+    templateUrl: 'advanced.html'
+  })
+
   .state('book', {
     url: '/book',
     templateUrl: 'book.html'

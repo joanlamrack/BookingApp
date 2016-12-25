@@ -47,7 +47,6 @@
 
           <div class="userid">Logged in as user</div>
             <ul class="list">
-              <a class="item item-icon-left"><i class="icon ion-ios-paper">History</i></a>
               <a class="item item-icon-left"><i class="icon ion-gear-a">Settings</i></a>
               <a class="item item-icon-left"><i class="icon ion-android-arrow-back">Logout</i></a>
               <a class="item"><i class="">Help</i></a>
@@ -67,9 +66,9 @@
                   </div>
                   <div class="buttons">
 
-                      <a class="button ion-chevron-right menu" href="#/book">Book</a>
+                      <a class="button button-outline button-light icon ion-ios-book menu" href="#/book"><br>Book</a>
 
-                      <a class="button ion-chevron-right menu" href="#/search">Search</a>
+                      <a class="button button-outline button-light icon ion-ios-paper menu" href="#/history">History</a>
                   </div>
                 </div>
               </ion-content>
@@ -82,8 +81,9 @@
       <script id="about.html" type="text/ng-template">
         <ion-view>
           <div class="bar bar-header">
-            <a class="button icon-left ion-chevron-left" href="#/"> Back </a>
-            <h1 class="title">About</h1>     
+            <a class="button button-icon ion-chevron-left" href="#/">  </a>
+            <h1 class="title">About</h1>
+
           </div>
 
           <ion-pane class="about">
@@ -96,16 +96,25 @@
 
       <script id="book.html" type="text/ng-template">
         <ion-view>
-          <div class="bar bar-header">
-            <a class="button icon-left ion-chervon-left" href="#/"> Back </a>
-            <h1 class="title">Book</h1>
+          <div class="bar bar-header item-input-inset ">
+            <label class="item-input-wrapper">
+              <i class="icon ion-ios-search placeholder-icon"></i>
+              <input type="search" placeholder="Search city, region, building">
+            </label>
+            <a class="button button-clear button-stable" href="#/">Cancel </a>
           </div>
 
           <ion-pane class="book">
             <ion-content scroll="false" class="book" has-header="true" padding="true">
-                Hehehehe
+
+            
             </ion-content>
           </ion-pane>
+
+          <div class="bar bar-footer">
+             <a class="button button-clear button-stable title advanced_search" href="#/advanced">Advanced Search</a>
+          </div>
+
         </ion-view>
       </script>
 
@@ -113,7 +122,37 @@
         <ion-view>
           <div class="bar bar-header">
             <a class="button icon-left ion-chervon-left" href="#/"> Back </a>
-            <h1 class="title">Search</h1>
+            <h1 class="title">search</h1>
+          </div>
+
+          <ion-pane class="search">
+            <ion-content scroll="false" class="search" has-header="true" padding="true">
+                Hehehehe
+            </ion-content>
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="history.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/">  </a>
+            <h1 class="title">History</h1>
+          </div>
+
+          <ion-pane class="search">
+            <ion-content scroll="false" class="search" has-header="true" padding="true">s
+                Hehehehe
+            </ion-content>
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="advanced.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/book">  </a>
+            <h1 class="title">Advanced Search</h1>
           </div>
 
           <ion-pane class="search">

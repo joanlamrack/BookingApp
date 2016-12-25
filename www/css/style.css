@@ -62,8 +62,9 @@ button{
 
 
 
-.about, .search, .book{
+.about, .search, .book, .history{
 	background-color: Grey;
 	padding:5%;
 }
+
 
