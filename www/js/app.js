@@ -61,6 +61,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'balai_kartini.html'
   })
 
+  .state('sidang', {
+    url: '/sidang',
+    templateUrl: 'balai_sidang.html'
+  })
+
+  .state('wconvention', {
+    url: '/wconvention',
+    templateUrl: 'wconvention.html'
+  })
+
+  .state('balairung', {
+    url: '/balairung',
+    templateUrl: 'balairung.html'
+  })
+
+  .state('raffles', {
+    url: '/raffles',
+    templateUrl: 'raffles.html'
+  })
+
   .state('success', {
     url: '/success',
     templateUrl: 'success.html'
@@ -82,3 +102,12 @@ app.config(function($stateProvider, $urlRouterProvider) {
 app.controller('MainCtrl', function($scope) {
  
 });
+
+app.controller('shiftCtrl', ['$scope', '$state', '$timeout',
+                                function($scope, $state, $timeout) {
+
+    $timeout(function() {
+      $state.go('index');
+      }, 3000);
+
+    }])

@@ -128,27 +128,27 @@
                 <p>Jakarta Selatan</p>
               </a>
 
-              <a class="item item-thumbnail-left" href="#">
+              <a class="item item-thumbnail-left" href="#/sidang">
                 <img src="img/Balai-Sidang_thumb.jpg">
                 <h2>Balai Sidang Jakarta</h2>
                 <p>Tanah Abang</p>
                 <p>Jakarta Pusat</p>
               </a>
 
-              <a class="item item-thumbnail-left" href="#">
+              <a class="item item-thumbnail-left" href="#/wconvention">
                 <img src="img/Washington- Convention_thumb.jpg">
                 <h2>Washington Convention</h2>
                 <p>Washington DC</p>
               </a>
 
-              <a class="item item-thumbnail-left" href="#">
+              <a class="item item-thumbnail-left" href="#/balairung">
                 <img src="img/Balairung-UI_thumb.jpg">
                 <h2>Balairung UI</h2>
                 <p>Depok</p>
                 <p>Jakarta Selatan</p>
               </a>
 
-              <a class="item item-thumbnail-left" href="#">
+              <a class="item item-thumbnail-left" href="#/raffles">
                 <img src="img/Raffles_thumb.jpg">
                 <h2>Raffles Jakarta</h2>
                 <p>Karet Kuningan</p>
@@ -269,6 +269,7 @@
       </script>
 
       <script id="success.html" type="text/ng-template">
+      <div ng-controller="shiftCtrl">
         <ion-view>
             <a class="button button-icon ion-chevron-left" href="#/">  </a>
             <h1 class="title">About</h1>
@@ -283,12 +284,13 @@
 
                 <p class="success">The Owner will be notified. Make sure to do check-ins and arrangements!</p>
 
-
-              </div>
+              </a>
+            
 
               </ion-content>
           </ion-pane>
         </ion-view>
+        </div>
       </script>
 
       <!-- Booking place pages -->
@@ -339,6 +341,233 @@
                 </div>
                 <div class="item item-image">
                   <img src="img/balai-kartini_floor.jpg">
+                </div>
+              </div>
+
+              </ion-content>
+
+              <div class="bar bar-footer">
+                <a class="button button-clear button-balanced title" href="#/booking">Book</a>
+              </div>
+
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="balai_sidang.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/book">  </a>
+            <h1 class="title">Info</h1>
+          </div>
+
+          <ion-pane>
+            <ion-content scroll="true" class="places" has-header="true" padding="true">
+              <div class="list card">
+
+
+                <div class="item item-image about_image">
+                  <img src="img/Balai-Sidang_thumb.jpg">
+                </div>
+
+                <div class="item item-text-wrap">
+                  <b>Balai Sidang Jakarta (JCC)</b><br>
+                  Jl. Jendral Gatot Subroto, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10270, Indonesia
+                </div>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-ios-telephone"></i>
+                  +62 21 5726000
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-android-mail"></i>
+                  Convention and Special Events<br>
+                  andreas@jcc.co.id<br>
+                  Exhibition<br>
+                  edwin@jcc.co.id
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-cube"></i>
+                  Capacity of 1000 People
+                </a>
+
+              </div>
+
+              <div class="card">
+                <div class="item item-divider">
+                  Floor Plan
+                </div>
+                <div class="item item-image">
+                  <img src="img/balai-sidang_floorplan.jpg">
+                </div>
+              </div>
+
+              </ion-content>
+
+              <div class="bar bar-footer">
+                <a class="button button-clear button-balanced title" href="#/booking">Book</a>
+              </div>
+
+          </ion-pane>
+        </ion-view>
+      </script>
+
+
+      <script id="wconvention.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/book">  </a>
+            <h1 class="title">Info</h1>
+          </div>
+
+          <ion-pane>
+            <ion-content scroll="true" class="places" has-header="true" padding="true">
+              <div class="list card">
+
+
+                <div class="item item-image about_image">
+                  <img src="img/Washington- Convention_thumb.jpg">
+                </div>
+
+                <div class="item item-text-wrap">
+                  <b>Washington State Convention Center</b><br>
+                  705 Pike St, Seattle, WA 98101
+                </div>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-ios-telephone"></i>
+                  +1 206-694-5000
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-cube"></i>
+                  Capacity of 5000+ People
+                </a>
+
+              </div>
+
+              <div class="card">
+                <div class="item item-divider">
+                  Floor Plan
+                </div>
+                <div class="item item-image">
+                  <img src="img/wconvention_floorplan.jpg">
+                </div>
+              </div>
+
+              </ion-content>
+
+              <div class="bar bar-footer">
+                <a class="button button-clear button-balanced title" href="#/booking">Book</a>
+              </div>
+
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="balairung.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/book">  </a>
+            <h1 class="title">Info</h1>
+          </div>
+
+          <ion-pane>
+            <ion-content scroll="true" class="places" has-header="true" padding="true">
+              <div class="list card">
+
+
+                <div class="item item-image about_image">
+                  <img src="img/Balairung-UI_thumb.jpg">
+                </div>
+
+                <div class="item item-text-wrap">
+                  <b>Balairung UI</b><br>
+                  Pondok Cina, Beji, Depok, Jawa Barat 16424
+                </div>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-ios-telephone"></i>
+                  +62 21 7867222
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-android-mail"></i>
+                  humas-ui@ui.ac.id
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-cube"></i>
+                  Capacity of 400 People
+                </a>
+
+              </div>
+
+              <div class="card">
+                <div class="item item-divider">
+                  Floor Plan
+                </div>
+                <div class="item item-image">
+                  <img src="img/balairung_floorplan.jpg">
+                </div>
+              </div>
+
+              </ion-content>
+
+              <div class="bar bar-footer">
+                <a class="button button-clear button-balanced title" href="#/booking">Book</a>
+              </div>
+
+          </ion-pane>
+        </ion-view>
+      </script>
+
+      <script id="raffles.html" type="text/ng-template">
+        <ion-view>
+          <div class="bar bar-header">
+            <a class="button button-icon ion-chevron-left" href="#/book">  </a>
+            <h1 class="title">Info</h1>
+          </div>
+
+          <ion-pane>
+            <ion-content scroll="true" class="places" has-header="true" padding="true">
+              <div class="list card">
+
+
+                <div class="item item-image about_image">
+                  <img src="img/Raffles_thumb.jpg">
+                </div>
+
+                <div class="item item-text-wrap">
+                  <b>Raffles Jakarta</b><br>
+                  Ciputra World 1, Jl. Prof. Dr. Satrio Kav. 3-5, RT.18/RW.4, Karet Kuningan, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12940, Indonesia
+                </div>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-ios-telephone"></i>
+                  +62 21 29880888
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-android-mail"></i>
+                  jakarta@raffles.com
+                </a>
+
+                <a class="item item-icon-left">
+                  <i class="icon ion-cube"></i>
+                  Capacity of 1000 People
+                </a>
+
+              </div>
+
+              <div class="card">
+                <div class="item item-divider">
+                  Floor Plan
+                </div>
+                <div class="item item-image">
+                  <img src="img/raffles_floorplan.gif">
                 </div>
               </div>
 
