@@ -41,9 +41,9 @@ app.config(function($stateProvider, $urlRouterProvider) {
     templateUrl: 'about.html'
   })
 
-  .state('search', {
-    url: '/search',
-    templateUrl: 'search.html'
+  .state('help', {
+    url: '/help',
+    templateUrl: 'help.html'
   })
 
   .state('history', {
@@ -54,6 +54,21 @@ app.config(function($stateProvider, $urlRouterProvider) {
   .state('advanced', {
     url: '/advanced',
     templateUrl: 'advanced.html'
+  })
+
+  .state('kartini', {
+    url: '/kartini',
+    templateUrl: 'balai_kartini.html'
+  })
+
+  .state('success', {
+    url: '/success',
+    templateUrl: 'success.html'
+  })
+
+  .state('booking', {
+    url: '/booking',
+    templateUrl: 'booking.html'
   })
 
   .state('book', {
